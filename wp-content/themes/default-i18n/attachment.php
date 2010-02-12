@@ -44,7 +44,7 @@
 							// Neither Comments, nor Pings are open ?>
 							<?php _e('Both comments and pings are currently closed.', 'kubrick'); ?>
 
-						<?php } edit_post_link(__('Edit this entry.', 'kubrick'),'',''); ?>
+						<?php } edit_post_link(__('Modifier cette entrée.', 'kubrick'),'',''); ?>
 
 					</small>
 				</p>

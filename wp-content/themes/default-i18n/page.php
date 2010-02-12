@@ -19,7 +19,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<?php endwhile; endif; ?>
-	<?php edit_post_link(__('Edit this entry.', 'kubrick'), '<p>', '</p>'); ?>
+	<?php edit_post_link(__('Modifier cette entrée.', 'kubrick'), '<p>', '</p>'); ?>
 	</div>
 
 <?php get_sidebar(); ?>
