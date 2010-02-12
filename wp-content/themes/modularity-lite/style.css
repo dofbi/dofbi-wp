@@ -88,7 +88,7 @@ h6.top {color:#ccc;}
 .content h2 {font-family: Georgia, serif;}
 .post {display:block;clear:both;}
 .post h4, .post h6 {font-family: Georgia, serif;}
-.postmetadata {background:#000;padding:1em;color:#999; font-size:10px;-moz-border-radius: 5px;-khtml-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;}
+.postmetadata {background:#000;padding:1em;color:#999; font-size:10px;-khtml-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;-moz-border-radius-bottomleft: 5px;-moz-border-radius-bottomright:5px;}
 .postmetadata a {}
 .postmetadata a:hover {color:#fff;}
 .underlined {border-bottom:1px solid #eee;}
@@ -196,3 +196,17 @@ ul#portfolio {padding:0;list-style:none;margin:0 0 1em;overflow:hidden;max-heigh
 ul#portfolio li {list-style:none;padding:0;}
 ul#portfolio li h4 {margin: 0 0 .5em 0;text-transform:uppercase;padding:0 16px;}
 ul#portfolio li img {max-width:950px;text-align:center;margin:0;}
+
+/******* post-meta *******/
+.post-meta{
+	background:#000;
+	padding:1em;
+	color:#999;
+	font-size:10px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-radius: 5px;
+	margin: 0px;
+}
