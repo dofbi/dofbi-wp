@@ -54,7 +54,7 @@
 							// Neither Comments, nor Pings are open ?>
 							Both comments and pings are currently closed.
 
-						<?php } edit_post_link('Modifier cette entrée.','',''); ?>
+						<?php } edit_post_link('Modifier cette entr&eacute;e.','',''); ?>
 
 					</small>
 				</p>

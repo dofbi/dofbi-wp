@@ -19,7 +19,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<?php endwhile; endif; ?>
-	<?php edit_post_link('Modifier cette entrée.', '<p>', '</p>'); ?>
+	<?php edit_post_link('Modifier cette entr&eacute;e.', '<p>', '</p>'); ?>
 	
 	<?php comments_template(); ?>
 	

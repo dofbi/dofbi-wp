@@ -14,5 +14,5 @@ Template Name: Wide Page
 		</div>
 		<div class="clear"></div>
 		<?php endwhile; endif; ?>
-	<?php edit_post_link('Modifier cette entrée.', '<p>', '</p>'); ?>
+	<?php edit_post_link('Modifier cette entr&eacute;e.', '<p>', '</p>'); ?>
 <?php get_footer(); ?>

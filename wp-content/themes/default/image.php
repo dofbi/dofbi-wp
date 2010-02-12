@@ -45,7 +45,7 @@ get_header();
 							// Neither Comments, nor Pings are open ?>
 							Les commentaires et pings sont fermés.
 
-						<?php } edit_post_link('Modifier cette entrée.','',''); ?>
+						<?php } edit_post_link('Modifier cette entr&eacute;e.','',''); ?>
 
 					</small>
 				</p>
