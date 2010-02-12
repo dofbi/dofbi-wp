@@ -27,7 +27,7 @@
 				</div>
 				<div class="clear"></div>
 				<?php the_meta(); ?>
-				<p class="postmetadata"><?php the_time('M d, Y') ?> | Categories: <?php if (the_category(', '))  the_category(); ?> <?php if (get_the_tags()) the_tags('| Tags: '); ?> | <?php comments_popup_link('Laissez un commentaire &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> <?php edit_post_link('Edit', '| ', ''); ?> </p>
+				<p class="postmetadata"><?php the_time('M d, Y') ?> | Categories: <?php if (the_category(', '))  the_category(); ?> <?php if (get_the_tags()) the_tags('| Tags: '); ?> | <?php comments_popup_link('Laissez un commentaire &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> <?php edit_post_link('Modifier', '| ', ''); ?> </p>
 			</div>
 		<div class="clear"></div>
 		<?php endwhile; ?>
