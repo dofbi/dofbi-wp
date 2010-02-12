@@ -38,7 +38,7 @@
 <?php include (THEMELIB . '/apps/multimedia.php'); ?>
 <?php the_content(); ?>
 <div class="clear"></div>
-<p class="postmetadata"><?php the_time('M d, Y') ?> | <?php the_category(', ') ?> | <?php comments_popup_link('Leave A Comment &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> <?php edit_post_link('Edit', '| ', ''); ?> </p>
+<p class="postmetadata"><?php the_time('M d, Y') ?> | <?php the_category(', ') ?> | <?php comments_popup_link('Laissez un commentaire &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> <?php edit_post_link('Edit', '| ', ''); ?> </p>
 </div>
 <hr />
 <?php endwhile; ?>

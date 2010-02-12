@@ -8,7 +8,7 @@
 			echo "24 last";
 		}
 		?>">
-<h3 class="sub">Latest</h3>
+<h3 class="sub">Nouveau</h3>
 	<?php if (have_posts()) : ?>
 	<?php $i = 0; ?>
 		<?php while (have_posts()) : the_post(); $i++; ?>
@@ -27,7 +27,7 @@
 				</div>
 				<div class="clear"></div>
 				<?php the_meta(); ?>
-				<p class="postmetadata"><?php the_time('M d, Y') ?> | Categories: <?php if (the_category(', '))  the_category(); ?> <?php if (get_the_tags()) the_tags('| Tags: '); ?> | <?php comments_popup_link('Leave A Comment &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> <?php edit_post_link('Edit', '| ', ''); ?> </p>
+				<p class="postmetadata"><?php the_time('M d, Y') ?> | Categories: <?php if (the_category(', '))  the_category(); ?> <?php if (get_the_tags()) the_tags('| Tags: '); ?> | <?php comments_popup_link('Laissez un commentaire &#187;', '1 Comment &#187;', '% Comments &#187;'); ?> <?php edit_post_link('Edit', '| ', ''); ?> </p>
 			</div>
 		<div class="clear"></div>
 		<?php endwhile; ?>
