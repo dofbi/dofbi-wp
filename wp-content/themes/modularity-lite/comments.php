@@ -67,7 +67,7 @@
 <h3 id="respond">R&eacute;pondre</h3>
 
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
-<p>Vous devez &ecirc;tre<a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">connecté</a> pour poster un commentaire.</p>
+<p>Vous devez &ecirc;tre <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">connect&eacute;</a> pour poster un commentaire.</p>
 <?php else : ?>
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
@@ -77,16 +77,17 @@
 <p>Connect&eacute; en tant que <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">D&eacute;connexion &raquo;</a></p>
 
 <?php else : ?>
-
+<div id="comment-user-details">
+<?php do_action('alt_comment_login'); ?>
 <p><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />
-<label for="author">Nom <?php if ($req) echo "(required)"; ?></label></p>
+<label for="author">Nom <?php if ($req) echo "(n&eacute;cessaire)"; ?></label></p>
 
 <p><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
-<label for="email">Email (will not be published) <?php if ($req) echo "(required)"; ?></label></p>
+<label for="email">Email (ne seront pas publi&eacute;s) <?php if ($req) echo "(n&eacute;cessaire)"; ?></label></p>
 
 <p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
 <label for="url">Site ou blog</label></p>
-
+</div>
 <?php endif; ?>
 
 <!--<p><small><strong>XHTML:</strong> You can use these tags: <?php echo allowed_tags(); ?></small></p>-->
