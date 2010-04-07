@@ -31,12 +31,12 @@ get_header();
 							You'll need to download this plugin, and follow the instructions:
 							http://binarybonsai.com/wordpress/time-since/ */
 							/* $entry_datetime = abs(strtotime($post->post_date) - (60*120)); $time_since = sprintf(__('%s ago', 'kubrick'), time_since($entry_datetime)); */ ?>
-						<?php printf(__('Cet article a &eacute;t&eacute; post&eacute; le %1$s &agrave; %2$s at %3$s et est classé dans %4$s.', 'kubrick'), $time_since, get_the_time(__('l, F jS, Y', 'kubrick')), get_the_time(), get_the_category_list(', ')); ?>
-						<?php printf(__("Vous pouvez suivre les réponses à ce bulletin avec le fil <a href='%s'>RSS 2.0</a>.", "kubrick"), get_post_comments_feed_link()); ?> 
+						<?php printf(__('This entry was posted %1$s on %2$s at %3$s and is filed under %4$s.', 'kubrick'), $time_since, get_the_time(__('l, F jS, Y', 'kubrick')), get_the_time(), get_the_category_list(', ')); ?>
+						<?php printf(__("You can follow any responses to this entry through the <a href='%s'>RSS 2.0</a> feed.", "kubrick"), get_post_comments_feed_link()); ?> 
 
 						<?php if ( comments_open() && pings_open() ) {
 							// Both Comments and Pings are open ?>
-							<?php printf(__('Vous pouvez <a href="#respond">laisser un commentaire</a>, ou faire un <a href="%s" rel="trackback">trackback </a> depuis votre propre site. ', 'kubrick'), trackback_url(false)); ?>
+							<?php printf(__('You can <a href="#respond">leave a response</a>, or <a href="%s" rel="trackback">trackback</a> from your own site.', 'kubrick'), trackback_url(false)); ?>
 
 						<?php } elseif ( !comments_open() && pings_open() ) {
 							// Only Pings are Open ?>

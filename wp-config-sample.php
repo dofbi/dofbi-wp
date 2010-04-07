@@ -18,7 +18,7 @@
  */
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
-/** Le nom de la base de données de WordPress. */
+/** Nom de la base de données de WordPress. */
 define('DB_NAME', 'votre_nom_de_bdd');
 
 /** Utilisateur de la base de données MySQL. */
@@ -33,8 +33,8 @@ define('DB_HOST', 'localhost');
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define('DB_CHARSET', 'utf8');
 
-/** Le type de collabtion de la base de données. 
-  * N'y touchez qui si vous savez ce que vous faites. 
+/** Type de collation de la base de données. 
+  * N'y touchez que si vous savez ce que vous faites. 
   */
 define('DB_COLLATE', '');
 
