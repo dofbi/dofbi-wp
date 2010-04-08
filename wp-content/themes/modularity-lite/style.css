@@ -117,6 +117,15 @@ h6.underlined {margin:0 0 1em;}
 #sidebar ul li a:hover,ul.txt li:hover{color:#fff;background-position:1px 0.8em;background: #000}
 #sidebar ul li a span,ul.txt li,h4 a span{color:#696455;}
 #sidebar ul li.active a{cursor:default;color:white;}
+#sidebar ul li a.titre{
+	border:none;
+	display:inline;
+	padding:0;
+	color:#428CE7;
+}
+#sidebar ul li a.suite{
+	text-align: right;
+}
 #sidebar ul ul{margin:0;list-style:none;}
 
 

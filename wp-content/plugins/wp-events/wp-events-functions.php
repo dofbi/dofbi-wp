@@ -175,11 +175,11 @@ function events_sidebar($lim = 0, $cat = 0) {
 				$template = $events_template['sidebar_template'];
 
 				$event->title = substr($event->title, 0 , $events_config['sidelength']);
-				if($event->title_link == 'Y') { $event->title = '<a href="'.$event->link.'" target="'.$events_config['linktarget'].'">'.$event->title.'</a>'; }
+				if($event->title_link == 'Y') { $event->title = '<a href="'.$event->link.'" target="'.$events_config['linktarget'].'" class="titre">'.$event->title.'</a>'; }
 				$template = str_replace('%title%', $event->title, $template);
 				$template = str_replace('%event%', substr($event->pre_message, 0 , $events_config['sidelength']), $template);
 
-				if(strlen($event->link) > 0) { $template = str_replace('%link%', '<a href="'.$event->link.'" target="'.$events_config['linktarget'].'">'.$events_language['language_sidelink'].'</a>', $template); }
+				if(strlen($event->link) > 0) { $template = str_replace('%link%', '<a href="'.$event->link.'" target="'.$events_config['linktarget'].'" class="suite">'.$events_language['language_sidelink'].'</a>', $template); }
 				if(strlen($event->link) == 0) { $template = str_replace('%link%', '', $template); }
 
 				$template = str_replace('%countdown%', events_countdown($event->thetime, $event->theend, substr($event->post_message, 0 , $events_config['sidelength']), $event->allday), $template);
