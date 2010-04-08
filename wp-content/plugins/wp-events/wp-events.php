@@ -306,7 +306,7 @@ function events_categories() {
 -------------------------------------------------------------*/
 function events_schedule() {
 	global $wpdb, $userdata, $events_config;
-
+	setlocale(LC_TIME, 'fr_FR.utf8');
 	$timezone = get_option('gmt_offset')*3600;
 	$thetime 	= current_time('timestamp');
 

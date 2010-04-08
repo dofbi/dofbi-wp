@@ -6,6 +6,7 @@
  Receive:   $time_start, $time_end, $message, $allday
  Return:	$output_countdown
 -------------------------------------------------------------*/
+setlocale(LC_TIME, 'fr_FR.utf8');
 function events_countdown($time_start, $time_end, $message, $allday) {
 	global $events_config, $events_language;
 
